@@ -11,12 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     container: registry.gitlab.com/hadzhioglu/padavan-ng
     defaults: { run: { shell: bash } }
-    steps:
-    - name: Set timezone
-      uses: szenius/set-timezone@v1.2
-      with:
-        timezoneLinux: "Europe/Kiev"
-        
+    steps:      
     - uses: actions/checkout@v4
   
     - name: Get variables
